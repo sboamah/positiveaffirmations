@@ -1,0 +1,166 @@
+body{
+    margin: 0 auto;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), url(images/iamibelieveIwill.png);
+    animation: moveIt 10s linear infinite;
+    background-repeat: repeat;
+}
+
+@keyframes moveIt {
+    from {background-position: bottom left;}
+    to {background-position: top right;}
+  }
+
+#container{
+    margin: auto;
+    margin-top: 15%;
+    width: 50%;
+    align-content: center;
+    -webkit-animation:fadeIn 4s;
+}
+
+h1 {
+  font-size: 40px;  
+  color: #000;
+  font-family: 'Oxygen Mono', monospace;
+  opacity: 1;
+  font-weight: 400;
+  letter-spacing: -5px;
+  line-height: 35px;
+}
+
+h2{
+    font-size: 17px;
+    color: #000;
+    font-family: 'Nunito', sans-serif;
+    opacity: 1;
+    display: inline;
+    font-weight: 200;
+    line-height: 5px;
+}
+
+h3 {
+    font-size: 14px;  
+    color: #000;
+    font-family: 'Oxygen Mono', monospace;
+    opacity: 1;
+    font-weight: 400;
+  }
+
+#title{
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+#descript{
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;  
+}
+
+.desc{
+    background:#fff; 
+    width:256px; 
+    border: 1px solid #000; 
+    padding: 1px;  
+    margin: 0 auto;
+    line-height: 5px;
+    transition:fadeIn 4s;
+    font-weight: normal;
+    scroll-behavior: smooth;
+}
+
+ 
+.nav{ 
+    background:#fff; 
+    text-align:right;  
+    z-index:1; 
+    text-transform: none; 
+    font-size:14px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 20px;
+}
+
+#opt{
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.options{
+    margin: 0 auto;
+    text-align: center; 
+    display: inline-block; 
+    border: 1px solid #000;
+    width: 124px;
+    background-color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    padding:1px;
+}
+
+.options:hover{
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    transition:ease-in-out 0.5s;
+}
+
+.options:hover a{
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.formats{
+    text-align: right; 
+    color: #000;
+    display: block;
+    font-weight: normal;
+    border-top: 1px solid #eee;
+    font-size:14px;
+    font-family: 'Nunito', sans-serif;
+    line-height: 20px;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+
+    h1{
+        font-size: 35px;  
+    }
+
+    h2{
+        font-size: 14px;
+        color: #000;
+    }
+
+    #container {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #title, .options, .desc{
+        width: 100%;
+        display: block;
+    }
+    h1{
+        font-size: 35px;  
+    }
+
+    h2{
+        font-size: 14px;
+        color: #000;
+    }
+
+    #container {
+        margin-top: 30px;
+    }
+}
