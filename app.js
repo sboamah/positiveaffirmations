@@ -42,8 +42,10 @@
         }
     }
 
-    $(document).ready(function(){
+$(document).ready(function(){
         $(".hide").hide();
+
         $(".show").click(function(){
         $(this).next(".hide").slideToggle('fast');
-        }); });
+        }); 
+    });
