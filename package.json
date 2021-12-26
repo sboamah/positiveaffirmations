@@ -1,0 +1,25 @@
+{
+  "name": "positiveaffirmations",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sboamah/positiveaffirmations.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sboamah/positiveaffirmations/issues"
+  },
+  "homepage": "https://github.com/sboamah/positiveaffirmations#readme",
+  "dependencies": {
+    "-": "0.0.1",
+    "@angular/cli": "^13.1.2",
+    "angular": "^1.8.2",
+    "g": "^2.0.1"
+  }
+}

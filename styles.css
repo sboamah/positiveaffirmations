@@ -11,9 +11,11 @@ body{
   }
 
 #container{
-    margin: auto;
-    margin-top: 15%;
+    margin: 0 auto;
+    margin-top: 10%;
+    vertical-align: middle;
     width: 65%;
+    height: auto;
     align-content: center;
     animation: normal;
     -webkit-animation:fadeIn 4s;
@@ -21,12 +23,12 @@ body{
 
 h1 {
   font-size: 40px;  
-  color: #000;
-  font-family: 'Oxygen Mono', monospace;
+  color: #083D00;
+  font-family: 'Poppins', monospace;
   opacity: 1;
   font-weight: 400;
-  letter-spacing: -5px;
-  line-height: 35px;
+  letter-spacing: 3px;
+  line-height: 40px;
 }
 
 h2{
@@ -36,52 +38,34 @@ h2{
     opacity: 1;
     display: inline;
     font-weight: 200;
-    line-height: 5px;
+    line-height: 20px;
 }
 
 h3 {
     font-size: 14px;  
     color: #000;
-    font-family: 'Oxygen Mono', monospace;
+    font-family: 'Poppins', monospace;
     opacity: 1;
     font-weight: 400;
   }
 
 #title{
     width: 100%;
+    height: 80px;
     margin: 0 auto;
-    text-align: center;
+    text-align: left;
+    padding-bottom: 50px;
 }
 
 
 #descript{
     width: 100%;
     margin: 0 auto;
+    padding-bottom: 15px;
     display: inline-block;
-    text-align: center;  
+    text-align: left;  
 }
 
-.desc{
-    background:transparent; 
-    width:256px; 
-    padding: 3px;  
-    margin: 0 auto;
-    line-height: 5px;
-    transition:fadeIn 4s;
-    font-weight: normal;
-    scroll-behavior: smooth;
-}
-
- 
-.nav{ 
-    background:transparent; 
-    text-align:right;  
-    z-index:1; 
-    text-transform: none; 
-    font-size:14px;
-    font-family: 'Nunito', sans-serif;
-    line-height: 20px;
-}
 
 #opt{
     margin: 0 auto;
@@ -94,7 +78,7 @@ h3 {
     margin: 0 auto;
     text-align: center; 
     display: inline-block; 
-    border: 1px solid #000;
+    border: 1px solid #083D00;
     width: 124px;
     background-color: white;
     font-family: 'Nunito', sans-serif;
@@ -103,7 +87,7 @@ h3 {
 }
 
 .options:hover{
-    background-color: black;
+    background-color: #083D00;
     color: white;
     font-weight: bolder;
     transition:ease-in-out 0.5s;
@@ -118,16 +102,24 @@ a {
 }
 
 .formats{
-    text-align: right; 
+    text-align: center; 
     color: #000;
-    display: block;
+    width: auto;
+    padding: 5px 15px;
+    border-radius: 20px;
+    vertical-align: middle;
+    display: inline-block;
     font-weight: normal;
-    border-top: 1px solid #eee;
-    font-size:14px;
-    font-family: 'Nunito', sans-serif;
-    line-height: 20px;
+    background-color: #E0BD5C;
+    font-size: 13px;
+    margin: 0px 5px;
+    font-family: 'Poppins', sans-serif;
 }
 
+.formats:hover{
+    background-color: #D57B32;
+    transition:ease-in-out 0.5s;
+}
 
 
 @media only screen and (max-width: 850px) {
@@ -147,10 +139,15 @@ a {
 }
 
 @media only screen and (max-width: 550px) {
-    #title, .options, .desc{
+    #title, .options .desc{
         width: 100%;
         display: block;
     }
+
+    .formats{
+        width: 20%;
+    }
+
     h1{
         font-size: 35px;  
     }
@@ -161,6 +158,7 @@ a {
     }
 
     #container {
-        margin-top: 30px;
+        margin-top: 30%;
+        width:80%;
     }
 }
