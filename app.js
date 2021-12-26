@@ -56,20 +56,29 @@
 
     function format1Select(){
         x = document.getElementsByClassName("formats")[0];
-        y = document.getElementsByClassName("nav")[0];
-        y.innerHTML = x.innerHTML + " +";
+        if(x){
+            document.getElementsByClassName("formats")[0].style["background-color"] = "#D57B32";
+            document.getElementsByClassName("formats")[1].style["background-color"] = "#E0BD5C";
+            document.getElementsByClassName("formats")[2].style["background-color"] = "#E0BD5C";
+        }
     }
 
     function format2Select(){
         x = document.getElementsByClassName("formats")[1];
-        y = document.getElementsByClassName("nav")[0];
-        y.innerHTML = x.innerHTML + " +";
+        if(x){
+            document.getElementsByClassName("formats")[1].style["background-color"] = "#D57B32";
+            document.getElementsByClassName("formats")[0].style["background-color"] = "#E0BD5C";
+            document.getElementsByClassName("formats")[2].style["background-color"] = "#E0BD5C";
+        }
     }
 
     function format3Select(){
         x = document.getElementsByClassName("formats")[2];
-        y = document.getElementsByClassName("nav")[0];
-        y.innerHTML = x.innerHTML + " +";
+        if(x){
+            document.getElementsByClassName("formats")[2].style["background-color"] = "#D57B32";
+            document.getElementsByClassName("formats")[1].style["background-color"] = "#E0BD5C";
+            document.getElementsByClassName("formats")[0].style["background-color"] = "#E0BD5C";
+        }
     }
 
     function generate() {
