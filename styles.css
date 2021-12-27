@@ -27,7 +27,7 @@ h1 {
   font-family: 'Poppins', monospace;
   opacity: 1;
   font-weight: 800;
-  letter-spacing: 3px;
+  letter-spacing: auto;
   line-height: 40px;
 }
 
@@ -51,17 +51,18 @@ h3 {
 
 #title{
     width: 100%;
-    height: 80px;
+    height: 60px;
     margin: 0 auto;
     text-align: left;
-    padding-bottom: 50px;
+    max-lines: 2;
+    padding-bottom: 4vh;
 }
 
 
 #descript{
     width: 100%;
     margin: 0 auto;
-    padding-bottom: 15px;
+    padding-bottom: 4vh;
     display: inline-block;
     text-align: left;  
 }
@@ -79,7 +80,8 @@ h3 {
     text-align: center; 
     display: inline-block; 
     border: 1px solid #083D00;
-    width: 124px;
+    border-radius: 20px;
+    width: 150px;
     background-color: white;
     font-family: 'Nunito', sans-serif;
     font-size: 20px;
@@ -139,7 +141,7 @@ a {
 }
 
 @media only screen and (max-width: 550px) {
-    #title, .options .desc{
+    #title, .options {
         width: 100%;
         display: block;
     }

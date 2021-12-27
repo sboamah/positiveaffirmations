@@ -24,7 +24,7 @@
         "my dreams are valid",
         "in celebrating myself",
         "I deserve respect",
-        "in my personal autonomy",
+        "in my own autonomy",
         "in my strength",
         "everything will be okay",
         "I deserve peace",
